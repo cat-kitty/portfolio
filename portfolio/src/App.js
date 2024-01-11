@@ -3,6 +3,7 @@ import "./App.css";
 import human from "./images/human.png";
 import create from "./images/create.png";
 import home from "./images/home.json";
+import Lottie from "lottie-react";
 
 function App() {
   return (
@@ -15,11 +16,8 @@ function App() {
             <div className="left">
               <div className="leftbar">
                 <div className="leftbarinner">
+                  <Lottie animationData={home} loop={true} />
                   <ul>
-                    <li>
-                      <img src={home} />
-                      <a href="#">About</a>
-                    </li>
                     <li>
                       <a href="#">Projects</a>
                     </li>

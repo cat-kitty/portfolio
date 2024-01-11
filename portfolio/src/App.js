@@ -4,6 +4,9 @@ import human from "./images/human.png";
 import create from "./images/create.png";
 import home from "./images/home.json";
 import Lottie from "lottie-react";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
+import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 
 function App() {
   return (
@@ -12,19 +15,26 @@ function App() {
       <body>
         <main style={{ margin: "0px" }}>
           <div className="whole">
-            {/* <div className="miniwhole"> */}
             <div className="left">
               <div className="leftbar">
                 <div className="leftbarinner">
-                  <Lottie animationData={home} loop={true} />
-                  <ul>
-                    <li>
-                      <a href="#">Projects</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact</a>
-                    </li>
-                  </ul>
+                  <div className="leftbarinnerinner">
+                    <div className="icon1">
+                      <Lottie animationData={home} loop={true} />
+                    </div>
+                    <div className="icon1">
+                      {/* <i class="fa-regular fa-star"></i> */}
+                      <StarBorderOutlinedIcon fontSize="large" />
+                    </div>
+                    <div className="icon1">
+                      {/* <i className="fa-regular fa-folder-open"></i> */}
+                      <TipsAndUpdatesOutlinedIcon fontSize="large" />
+                    </div>
+                    <div className="icon1">
+                      {/* <i className="fa-regular fa-briefcase"></i> */}
+                      <WorkHistoryOutlinedIcon fontSize="large" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="lefttoggle">

@@ -56,6 +56,15 @@
   /* border-top-left-radius: ; */
 }
 
+.leftbarinnerinner{
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  margin-top: 50%;
+}
+
 .lefttoggle{
   background-color: white;
   display: flex;
@@ -137,3 +146,15 @@ h1{
   font-family: 'Crayon';
   font-size: 5rem;
 }
+
+.icon1 {
+  /* width: 5rem; */
+  /* height: auto; */
+  display: flex;
+  gap: 10rem;
+}
+
+/* i{
+  flex-grow: 1;
+  font-size: 5rem;
+} */

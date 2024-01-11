@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import human from "./public/human.png";
+import human from "./images/human.png";
 
 function App() {
   return (
@@ -9,22 +9,31 @@ function App() {
       <body>
         <main style={{ margin: "0px" }}>
           <div className="whole">
+            {/* <div className="miniwhole"> */}
             <div className="left">
               <div className="leftbar">
-                <ul>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Projects</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
-                </ul>
+                <div className="leftbarinner">
+                  <ul>
+                    <li>
+                      <a img="..\images\home.json" href="#">
+                        About
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="lefttoggle">
-                <p>dark</p>
+                <div className="lefttoggle2">
+                  <div className="lefttoggle3">
+                    <p>dark</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="right">
@@ -38,6 +47,7 @@ function App() {
                 <img className="human" src={human} />
               </div>
             </div>
+            {/* </div> */}
           </div>
         </main>
       </body>

@@ -14,6 +14,12 @@
   min-height: 100vh;
 }
 
+/* .miniwhole{
+  min-height: 100%;
+  display: flex;
+  min-height: 98vhs;
+} */
+
 .left{
   background-color: black;
   display: flex;
@@ -23,7 +29,7 @@
 }
 
 .leftbar{
-  background-color: aqua;
+  background-color: white;
   display: flex;
   align-self: flex-start;
   min-width: 100%;
@@ -32,13 +38,44 @@
   /* border-top-left-radius: ; */
 }
 
+.leftbarinner{
+  background-color: #F5F5FC;
+  display: flex;
+  align-self: flex-start;
+  min-width: 90%;
+  min-height: 100%;
+  flex-grow: 1;
+  /* max-height: 100%; */
+  margin: 5%;
+  border-radius: 5rem 5rem 0rem 5rem;
+  /* border-top-left-radius: ; */
+}
+
 .lefttoggle{
-  background-color: blue;
+  background-color: white;
   display: flex;
   min-width: 100%;
   min-height: 20%;
   align-self: flex-end;
   border-radius: 0 0 0 5rem;
+}
+
+.lefttoggle2{
+  background-color: #F5F5FC;
+  display: flex;
+  min-width: 95%;
+  min-height: 100%;
+  margin-right: 5%;
+  align-self: flex-end;
+  border-radius: 5rem 0 0 5rem;
+}
+
+.lefttoggle3{
+  background-color: white;
+  display: flex;
+  min-height: 100%;
+  min-width: 100%;
+  border-radius: 5rem 5rem 0 5rem;
 }
 
 .right{

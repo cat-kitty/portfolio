@@ -24,15 +24,17 @@ function App() {
                     </div>
                     <div className="icon1">
                       {/* <i class="fa-regular fa-star"></i> */}
-                      <StarBorderOutlinedIcon fontSize="large" />
+                      <StarBorderOutlinedIcon style={{ fontSize: "50px" }} />
                     </div>
                     <div className="icon1">
                       {/* <i className="fa-regular fa-folder-open"></i> */}
-                      <TipsAndUpdatesOutlinedIcon fontSize="large" />
+                      <TipsAndUpdatesOutlinedIcon
+                        style={{ fontSize: "50px" }}
+                      />
                     </div>
                     <div className="icon1">
                       {/* <i className="fa-regular fa-briefcase"></i> */}
-                      <WorkHistoryOutlinedIcon fontSize="large" />
+                      <WorkHistoryOutlinedIcon style={{ fontSize: "50px" }} />
                     </div>
                   </div>
                 </div>

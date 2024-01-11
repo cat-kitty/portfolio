@@ -8,6 +8,17 @@
   src: url('../../colored-crayons-font/ColoredCrayons-7wPR.ttf') format('truetype');
 }
 
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    bottom: -25%;
+  }
+  to {
+    transform: scale(1);
+    bottom: 0%;
+  }
+}
+
 .whole{
   min-height: 100%;
   display: flex;
@@ -91,19 +102,43 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  align-items: center;
 }
 
 .power1{
   height:4%;
 }
 
+.create{
+  position: absolute;
+  width: 95%;
+  /* align-self: center; */
+  /* left: 50%; */
+  top: 50%;
+  max-width: 90rem;
+  /* width: 100%;
+  height: 100%; */
+}
+
 .human{
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  position: relative;
+  animation: zoomIn 2s ease-in-out;
+  /* animation-delay: 0.5s; */
   display: block;
   width: auto;
-  height: 100%; /* Adjusts the height to fill the container */
-  margin: 0 auto; /* Horizontally centers the image */
+  height: 100%; 
+  margin: 0 auto;
   object-fit: contain;
 }
+
+/* .human:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+} */
 
 .header{
   display: flex;

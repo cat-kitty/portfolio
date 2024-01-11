@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import human from "./images/human.png";
+import create from "./images/create.png";
+import home from "./images/home.json";
 
 function App() {
   return (
@@ -15,9 +17,8 @@ function App() {
                 <div className="leftbarinner">
                   <ul>
                     <li>
-                      <a img="..\images\home.json" href="#">
-                        About
-                      </a>
+                      <img src={home} />
+                      <a href="#">About</a>
                     </li>
                     <li>
                       <a href="#">Projects</a>
@@ -44,6 +45,7 @@ function App() {
               <p>hi</p>
               <div className="power">
                 <div className="power1"></div>
+                <img className="create" src={create} />
                 <img className="human" src={human} />
               </div>
             </div>

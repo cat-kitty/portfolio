@@ -14,7 +14,6 @@ export function Home() {
             </div>
             <Box className="power">
                 <div className="power1"></div>
-                {/* <img className="stars" src={stars} /> */}
                 <div className="flicker">
                     <img className="stars1" src={stars1} />
                     <img className="stars2" src={stars2} />

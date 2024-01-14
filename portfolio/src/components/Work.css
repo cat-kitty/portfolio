@@ -176,4 +176,8 @@
     padding: 5rem 2rem 3rem;
     margin-inline: auto;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   

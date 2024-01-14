@@ -26,14 +26,6 @@ function App() {
                     <div className="oval border">
                       <Button className="icon2" href="#home">
                         <Lottie animationData={home} loop={true} />
-                        {/* <Button
-                          sx={{
-                            position: "absolute",
-                            left: "0",
-                            top: "0",
-                          }}
-                          href="#home"
-                        /> */}
                       </Button>
                       <div className="line"></div>
                       <a

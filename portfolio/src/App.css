@@ -47,19 +47,24 @@
 }
 
 .left{
+  position: sticky;
   background-color: black;
   display: flex;
   flex-direction: column;
-  width: 10rem;
+  width: 9rem;
+  height: 100vh;
+  z-index: 10000;
+  top: 0;
 }
 
 .leftbar{
   background-color: white;
+  /* color: #387eff6b; */
   display: flex;
   align-self: flex-start;
   min-width: 100%;
   min-height: 80%;
-  border-radius: 5rem 0 0 0;
+  border-radius: 2.5rem 0 0 0;
 }
 
 .leftbarinner{
@@ -110,8 +115,8 @@
 }
 
 .linkedin {
-  width: 5rem;
-  height: 5rem;
+  width: 95%;
+  height: 95%;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -137,7 +142,7 @@
   min-height: 100%;
   margin-right: 5%;
   align-self: flex-end;
-  border-radius: 5rem 0 0 5rem;
+  border-radius: 3rem 0 0 5rem;
 }
 
 .lefttoggle3{
@@ -164,6 +169,7 @@
   flex-direction: column;
   position: relative;
   flex-grow: 1;
+  height: 100vh;
 }
 
 .power{

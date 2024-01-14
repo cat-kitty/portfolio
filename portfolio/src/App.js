@@ -1,14 +1,17 @@
 import "./App.css";
-import human from "./images/human.png";
-import create from "./images/create.png";
+// import human from "./images/human.png";
+// import create from "./images/create.png";
 import home from "./images/home.json";
-import circle from "./images/circle.png";
+// import circle from "./images/circle.png";
 import kitty from "./images/linkedin.jpg";
 import Lottie from "lottie-react";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import { LightDarkToggle } from "./components/LightDarkToggle";
+import { Home } from "./components/Home";
+import { Projects } from "./components/Projects";
+import { Box, Button } from "@mui/material";
 
 function App() {
   return (
@@ -23,7 +26,7 @@ function App() {
                   <div className="leftbarinnerinner">
                     <div className="oval border">
                       <div className="icon2">
-                        <Lottie animationData={home} loop={true} />
+                        <Lottie animationData={home} loop={true} href="#home" />
                       </div>
                       <div className="line"></div>
                       <a
@@ -40,11 +43,11 @@ function App() {
                     <div className="icon1">
                       <StarBorderOutlinedIcon style={{ fontSize: "50px" }} />
                     </div>
-                    <div className="icon1">
+                    <Button className="icon1" href="#projects">
                       <TipsAndUpdatesOutlinedIcon
                         style={{ fontSize: "50px" }}
                       />
-                    </div>
+                    </Button>
                     <div className="icon1">
                       <WorkHistoryOutlinedIcon style={{ fontSize: "50px" }} />
                     </div>
@@ -61,23 +64,13 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="right">
-              <div className="header">
-                <h1>Kitty Cai</h1>
-              </div>
-              <div className="power">
-                <div className="power1"></div>
-                <div className="wheels">
-                  <img className="prettycircleflip" src={circle} />
-                  <img className="prettycircleflip" src={circle} />
-                  <div className="paddingmid"></div>
-                  <img className="prettycircle" src={circle} />
-                  <img className="prettycircle" src={circle} />
-                </div>
-                <img className="create" src={create} />
-                <img className="human" src={human} />
-              </div>
-            </div>
+
+            <Box sx={{ flex: "1 1 auto", overflowY: " auto" }}>
+              <div id="home" />
+              <Home />
+              <div id="projects" />
+              <Projects />
+            </Box>
           </div>
         </main>
       </body>

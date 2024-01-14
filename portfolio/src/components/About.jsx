@@ -14,7 +14,8 @@ export const About = () => {
                     <br />
                     My skill set spans a wide spectrum, encompassing machine learning and data modelling, alongside a robust foundation in software development. I've delved into concepts like regression analysis and natural language processing. While in software development, I'm proficient in testing methodologies, and ensure the creation of clean and maintainable code through the implementation of programming principles. Moreover, I am able to develop streamlined software solutions from web frameworks and back-end development to financial modelling.
                     <br /><br />
-                    The goal is to consistently deliver meaningful and impactful contributions to every team I am on; a journey marked by a relentless pursuit of knowledge, combined with hands-on experience in diverse roles within rapid and diverse environments. I am open to various opportunities and new adventures.</Typography>
+                    My goal is to consistently deliver meaningful and impactful contributions to every team I am on; a journey marked by a relentless pursuit of knowledge, combined with hands-on experience in diverse roles within rapid and diverse environments. I am open to various opportunities and new adventures. <br /><br />
+                    In my free time, I enjoy a variety of sports including swimming, volleyball, skating, table-tennis and ballroom dancing. I also like to draw, read books, volunteer, and play chess. </Typography>
             </Paper>
         </Box >
     )

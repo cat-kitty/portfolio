@@ -1,6 +1,5 @@
 import React from 'react'
 import { ProjectCard } from './ProjectCard'
-import linkedin from '../images/linkedin.jpg'
 import { Box } from '@mui/material'
 
 import vpsa from '../images/project-vpsa.png'

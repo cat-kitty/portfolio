@@ -4,7 +4,7 @@ import './Work.css';
 
 export const Work = () => {
     return (
-        <Box className="aboutsection" sx={{ margin: 10, height: "100vh" }} id="work">
+        <Box className="aboutsection" sx={{ margin: 10, position: "relative" }} id="work">
             <div className="header">
                 <h1>Work Experience</h1>
             </div>

@@ -1,10 +1,9 @@
 import human from "../images/human1.png";
 import create from "../images/create.png";
 import circle from "../images/circle.png";
-import stars from "../images/stars.png";
-import { Box } from "@mui/material";
 import stars1 from "../images/stars1.png";
 import stars2 from "../images/stars2.png";
+import { Box } from "@mui/material";
 
 export function Home() {
     return (

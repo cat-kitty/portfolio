@@ -5,11 +5,13 @@ import Lottie from "lottie-react";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
+import PaletteIcon from "@mui/icons-material/Palette";
 import { LightDarkToggle } from "./components/LightDarkToggle";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Work } from "./components/Work";
+import { Interests } from "./components/Interests";
 import { Box, Button } from "@mui/material";
 
 function App() {
@@ -50,6 +52,9 @@ function App() {
                     <Button className="icon1" href="#work">
                       <WorkHistoryOutlinedIcon style={{ fontSize: "50px" }} />
                     </Button>
+                    <Button className="icon1" href="#interests">
+                      <PaletteIcon style={{ fontSize: "50px" }} />
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -71,6 +76,7 @@ function App() {
               <div id="projects" />
               <Projects />
               <Work />
+              <Interests />
             </Box>
           </div>
         </main>

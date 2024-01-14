@@ -301,18 +301,18 @@ h1{
   margin: auto;
   box-sizing: border-box;
   animation: rotateR 2s ease-in-out forwards;
-  width: 25%;
+  width: 20%;
 }
 
 .prettycircleflip{
   margin: auto;
   box-sizing: border-box;
   animation: rotateL 2s ease-in-out forwards;
-  width: 25%;
+  width: 20%;
 }
 
 .paddingmid{
-  flex-grow: 0.5;
+  flex-grow: 2;
   box-sizing: border-box;
 }
 

@@ -5,6 +5,7 @@ import home from "./images/home.json";
 // import circle from "./images/circle.png";
 import kitty from "./images/linkedin.jpg";
 import Lottie from "lottie-react";
+import stars from "./images/stars.png";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
@@ -25,9 +26,17 @@ function App() {
                 <div className="leftbarinner">
                   <div className="leftbarinnerinner">
                     <div className="oval border">
-                      <div className="icon2">
-                        <Lottie animationData={home} loop={true} href="#home" />
-                      </div>
+                      <Button className="icon2" href="#home">
+                        <Lottie animationData={home} loop={true} />
+                        {/* <Button
+                          sx={{
+                            position: "absolute",
+                            left: "0",
+                            top: "0",
+                          }}
+                          href="#home"
+                        /> */}
+                      </Button>
                       <div className="line"></div>
                       <a
                         className="linkedin"

@@ -40,6 +40,60 @@
   }
 }
 
+@keyframes rotateStar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* .stars {
+  position:fixed;
+  top:0;
+  width: 100%;
+  /* z-index: 1; 
+  /* animation: rotateStar 3s linear infinite; 
+} */
+
+.flicker{
+  /* position:fixed;
+  top:0; */
+  /* width: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  animation: fadeInOut 5s infinite;
+}
+
+.stars1{
+  animation-delay: 0s;
+  width: 100%;
+}
+
+.stars2{
+  animation-delay: 2.5s;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .whole{
   min-height: 100%;
   display: flex;
@@ -116,7 +170,9 @@
 
 .linkedin {
   width: 95%;
-  height: 95%;
+  /* height: 95%; */
+  aspect-ratio: 1/1;
+  /* height: auto; */
   border-radius: 50%;
   overflow: hidden;
 }
@@ -226,6 +282,7 @@ h1{
 .icon2 { /* house*/
   width: 68%;
   z-index: 100000;
+  /* position: relative; */
 }
 
 .wheels {

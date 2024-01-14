@@ -1,15 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 import human from "./images/human.png";
 import create from "./images/create.png";
 import home from "./images/home.json";
 import circle from "./images/circle.png";
-// import leaf from "./images/leaf.png";
-// import chain from "./images/chainclear.png";
+import kitty from "./images/linkedin.jpg";
 import Lottie from "lottie-react";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
+import { LightDarkToggle } from "./components/LightDarkToggle";
+// import LightModeIcon from "@mui/icons-material/LightMode";
+// import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function App() {
   return (
@@ -22,10 +23,21 @@ function App() {
               <div className="leftbar">
                 <div className="leftbarinner">
                   <div className="leftbarinnerinner">
-                    <div className="circle">
+                    <div className="oval border">
                       <div className="icon2">
                         <Lottie animationData={home} loop={true} />
                       </div>
+                      <div className="line"></div>
+                      <a
+                        className="linkedin"
+                        href="https://www.linkedin.com/in/kitty-c-79951b19a/"
+                      >
+                        <img
+                          className="kitty"
+                          src={kitty}
+                          alt="Kitty's LinkedIn Image"
+                        />
+                      </a>
                     </div>
                     <div className="icon1">
                       <StarBorderOutlinedIcon style={{ fontSize: "50px" }} />
@@ -44,8 +56,9 @@ function App() {
               <div className="lefttoggle">
                 <div className="lefttoggle2">
                   <div className="lefttoggle3">
-                    <div className="lighttoggle"></div>
-                    {/* <p>dark</p> */}
+                    <div className="lighttoggle">
+                      <LightDarkToggle />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -63,8 +76,6 @@ function App() {
                   <img className="prettycircle" src={circle} />
                   <img className="prettycircle" src={circle} />
                 </div>
-                {/* <img className="chain" src={chain} /> */}
-                {/* <img className="leaf" src={leaf} /> */}
                 <img className="create" src={create} />
                 <img className="human" src={human} />
               </div>

@@ -63,7 +63,8 @@
 }
 
 .leftbarinner{
-  background-color: #F5F5FC;
+  /* background-color: #F5F5FC; */
+  background-color: #47474b25;
   display: flex;
   align-self: flex-start;
   min-width: 90%;
@@ -82,7 +83,7 @@
   margin-top: 50%;
 }
 
-.circle {
+/* .circle {
   color: white;
   background-color: white;
   width: 5rem;
@@ -91,6 +92,62 @@
   align-items: center;
   justify-content: center;
   display: flex;
+} */
+
+.oval {
+  background-color: white;
+  display: flex;
+  width: 90%;
+  /* height: 15rem; */
+  border-radius: 5rem 5rem 5rem 5rem;
+
+  /* color: white;
+  background-color: white;
+  width: 5rem;
+  height: 10rem;
+  border-radius: 50%; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* margin: 2rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #47474b25;
+  /* color: red; */
+  /* background-color: rgb(229, 24, 24); */
+  /* border-color: rgb(229, 24, 24); */
+}
+
+.border {
+  border-width: 1px;
+  border-color: #e8e8e8;
+  /* box-sizing: border-box; */
+  border-style: solid;
+}
+
+/* hr{
+  color: red;
+} */
+.linkedin {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  /* background-color: green; */
+  overflow: hidden;
+
+}
+
+.kitty {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
 }
 
 .lefttoggle{
@@ -103,7 +160,8 @@
 }
 
 .lefttoggle2{
-  background-color: #F5F5FC;
+  /* background-color: #F5F5FC; */
+  background-color: #47474b25;
   display: flex;
   min-width: 95%;
   min-height: 100%;
@@ -118,16 +176,13 @@
   min-height: 100%;
   min-width: 100%;
   border-radius: 5rem 5rem 0 5rem;
-  /* align-items: center; */
-  /* align-content: center;
-  flex-direction: column; */
   justify-content: center;
+  align-items: center;
 }
 
 .lighttoggle{
-  background-color: grey;
+  background-color: #383A40;
   display: flex;
-  /* align-self: center; */
   width: 50%;
   height: 80%;
   border-radius: 5rem 5rem 5rem 5rem;
@@ -138,7 +193,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  /* min-width: fit-content; */
   flex-grow: 1;
 }
 
@@ -192,9 +246,11 @@ h1{
   gap: 10rem;
 }
 
-.icon2 {
-  width: 70%;
-  height: 80%;
+
+.icon2 { /* house*/
+  /* margin-top: 10%; */
+  width: 68%;
+  /* height: 80%; */
   z-index: 100000;
 }
 
@@ -210,30 +266,15 @@ h1{
   margin: auto;
   box-sizing: border-box;
   animation: rotateR 2s ease-in-out forwards;
-  /* flex: 1; */
-  /* max-width: 100%; */
-  /* flex-shrink: 0.5; */
 }
 
 .prettycircleflip{
   margin: auto;
   box-sizing: border-box;
-  
   animation: rotateL 2s ease-in-out forwards;
 }
 
 .paddingmid{
-  /* padding-block: 5rem; */
   flex-grow: 0.5;
   box-sizing: border-box;
 }
-/* 
-.chain{
-  display: absolute;
-  width: 95%;
-  /* top: 55%; 
-  left: 45%;
-  /* bottom: 50%; 
-  /* transform: translateX(-45%); 
-  max-width: 90rem;
-} */

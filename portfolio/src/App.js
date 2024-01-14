@@ -53,12 +53,15 @@ function App() {
               </div>
               <div className="power">
                 <div className="power1"></div>
+                <div className="wheels">
+                  <img className="prettycircleflip" src={circle} />
+                  <img className="prettycircleflip" src={circle} />
+                  <div className="paddingmid"></div>
+                  <img className="prettycircle" src={circle} />
+                  <img className="prettycircle" src={circle} />
+                </div>
                 <img className="create" src={create} />
                 <img className="human" src={human} />
-                <img className="prettycircle" src={circle} />
-                <img className="prettycircle" src={circle} />
-                <img className="prettycircle" src={circle} />
-                <img className="prettycircle" src={circle} />
               </div>
             </div>
           </div>

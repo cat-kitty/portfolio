@@ -121,7 +121,7 @@
 .create{
   position: absolute;
   width: 95%;
-  top: 45%;
+  top: 55%;
   left: 45%;
   transform: translateX(-45%);
   max-width: 90rem;
@@ -135,7 +135,7 @@
   transform: translateX(-50%);
   display: block;
   width: auto;
-  height: 100%; 
+  height: 95%; 
   margin: 0 auto;
   object-fit: contain;
 }
@@ -153,25 +153,32 @@ h1{
 }
 
 .icon1 {
-  /* width: 5rem; */
-  /* height: auto; */
   display: flex;
   gap: 10rem;
 }
 
 .icon2 {
-  /* width: 5rem; */
-  /* height: auto; */
   width: 70%;
   height: 80%;
   z-index: 100000;
 }
 
-/* .icon {
+.wheels {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
   display: flex;
-  gap: 10rem;
-} */
-/* i{
-  flex-grow: 1;
-  font-size: 5rem;
-} */
+  padding-top: 5%;
+}
+
+.prettycircle{
+  /* padding: 5rem; */
+  /* flex: 1; */
+  margin: auto;
+  /* max-width: 50%; */
+  box-sizing: border-box;
+}
+
+.paddingmid{
+  padding-block: 5rem;
+}

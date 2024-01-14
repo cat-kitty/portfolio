@@ -33,7 +33,6 @@ export const Projects = () => {
                 <ProjectCard image={blog} title="Blog" skills={["React", "MongoDB"]} />
                 <ProjectCard image={project} title="Old Portfolio" skills={["React", "MongoDB"]} />
             </Box>
-
         </Box>
     )
 }

@@ -1,16 +1,13 @@
 import "./App.css";
-// import human from "./images/human.png";
-// import create from "./images/create.png";
 import home from "./images/home.json";
-// import circle from "./images/circle.png";
 import kitty from "./images/linkedin.jpg";
 import Lottie from "lottie-react";
-import stars from "./images/stars.png";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import { LightDarkToggle } from "./components/LightDarkToggle";
 import { Home } from "./components/Home";
+import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Box, Button } from "@mui/material";
 
@@ -49,9 +46,9 @@ function App() {
                         />
                       </a>
                     </div>
-                    <div className="icon1">
+                    <Button className="icon1" href="#about">
                       <StarBorderOutlinedIcon style={{ fontSize: "50px" }} />
-                    </div>
+                    </Button>
                     <Button className="icon1" href="#projects">
                       <TipsAndUpdatesOutlinedIcon
                         style={{ fontSize: "50px" }}
@@ -77,6 +74,8 @@ function App() {
             <Box sx={{ flex: "1 1 auto", overflowY: " auto" }}>
               <div id="home" />
               <Home />
+              {/* <div id="about" /> */}
+              <About />
               <div id="projects" />
               <Projects />
             </Box>

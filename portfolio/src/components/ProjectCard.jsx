@@ -7,7 +7,7 @@ import { Box, CardActionArea } from '@mui/material';
 
 export const ProjectCard = ({ image, skills, title, description }) => {
     return (
-        <Card sx={{ maxHeight: 600, boxShadow: '10px 10px 10px #387eff6b' }}>
+        <Card sx={{ maxHeight: 600, boxShadow: '10px 10px 10px 10px #387eff6b', zIndex: 10000000 }}>
             <CardActionArea>
                 <CardMedia sx={{ height: 400, display: "flex", flexDirection: "column" }}>
                     <img src={image} style={{ height: "100%", width: "100%", objectFit: "contain" }} />

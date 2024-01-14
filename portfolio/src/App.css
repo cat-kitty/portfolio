@@ -19,6 +19,27 @@
   }
 }
 
+@keyframes rotateR {
+  from {
+    transform: rotate(0deg);
+    
+  }
+  to {
+    transform: rotate(-145deg);
+  }
+}
+
+@keyframes rotateL {
+  from {
+    transform: rotate(0deg) scaleX(-1);
+    /* transform: scaleX(-1); */
+  }
+  to {
+    transform: rotate(145deg) scaleX(-1);
+    /* transform: ; */
+  }
+}
+
 .whole{
   min-height: 100%;
   display: flex;
@@ -71,6 +92,7 @@
   justify-content: center;
   display: flex;
 }
+
 .lefttoggle{
   background-color: white;
   display: flex;
@@ -96,6 +118,19 @@
   min-height: 100%;
   min-width: 100%;
   border-radius: 5rem 5rem 0 5rem;
+  /* align-items: center; */
+  /* align-content: center;
+  flex-direction: column; */
+  justify-content: center;
+}
+
+.lighttoggle{
+  background-color: grey;
+  display: flex;
+  /* align-self: center; */
+  width: 50%;
+  height: 80%;
+  border-radius: 5rem 5rem 5rem 5rem;
 }
 
 .right{
@@ -172,13 +207,33 @@ h1{
 }
 
 .prettycircle{
-  /* padding: 5rem; */
-  /* flex: 1; */
   margin: auto;
-  /* max-width: 50%; */
   box-sizing: border-box;
+  animation: rotateR 2s ease-in-out forwards;
+  /* flex: 1; */
+  /* max-width: 100%; */
+  /* flex-shrink: 0.5; */
+}
+
+.prettycircleflip{
+  margin: auto;
+  box-sizing: border-box;
+  
+  animation: rotateL 2s ease-in-out forwards;
 }
 
 .paddingmid{
-  padding-block: 5rem;
+  /* padding-block: 5rem; */
+  flex-grow: 0.5;
+  box-sizing: border-box;
 }
+/* 
+.chain{
+  display: absolute;
+  width: 95%;
+  /* top: 55%; 
+  left: 45%;
+  /* bottom: 50%; 
+  /* transform: translateX(-45%); 
+  max-width: 90rem;
+} */

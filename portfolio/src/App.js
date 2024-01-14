@@ -4,6 +4,8 @@ import human from "./images/human.png";
 import create from "./images/create.png";
 import home from "./images/home.json";
 import circle from "./images/circle.png";
+// import leaf from "./images/leaf.png";
+// import chain from "./images/chainclear.png";
 import Lottie from "lottie-react";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
@@ -42,7 +44,8 @@ function App() {
               <div className="lefttoggle">
                 <div className="lefttoggle2">
                   <div className="lefttoggle3">
-                    <p>dark</p>
+                    <div className="lighttoggle"></div>
+                    {/* <p>dark</p> */}
                   </div>
                 </div>
               </div>
@@ -60,6 +63,8 @@ function App() {
                   <img className="prettycircle" src={circle} />
                   <img className="prettycircle" src={circle} />
                 </div>
+                {/* <img className="chain" src={chain} /> */}
+                {/* <img className="leaf" src={leaf} /> */}
                 <img className="create" src={create} />
                 <img className="human" src={human} />
               </div>

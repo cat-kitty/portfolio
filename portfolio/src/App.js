@@ -9,6 +9,7 @@ import { LightDarkToggle } from "./components/LightDarkToggle";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
+import { Work } from "./components/Work";
 import { Box, Button } from "@mui/material";
 
 function App() {
@@ -54,9 +55,9 @@ function App() {
                         style={{ fontSize: "50px" }}
                       />
                     </Button>
-                    <div className="icon1">
+                    <Button className="icon1" href="#work">
                       <WorkHistoryOutlinedIcon style={{ fontSize: "50px" }} />
-                    </div>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -74,10 +75,10 @@ function App() {
             <Box sx={{ flex: "1 1 auto", overflowY: " auto" }}>
               <div id="home" />
               <Home />
-              {/* <div id="about" /> */}
               <About />
               <div id="projects" />
               <Projects />
+              <Work />
             </Box>
           </div>
         </main>

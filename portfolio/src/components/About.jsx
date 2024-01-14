@@ -4,7 +4,7 @@ import kitty from '../images/kitty.JPG'
 
 export const About = () => {
     return (
-        <Box className="aboutsection" sx={{ margin: 10, zIndex: 1000000, height: "100vh" }} id="about">
+        <Box className="aboutsection" sx={{ margin: 10, height: "100vh" }} id="about">
             <div className="header">
                 <h1>About Me</h1>
             </div>

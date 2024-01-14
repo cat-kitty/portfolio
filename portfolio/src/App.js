@@ -9,8 +9,6 @@ import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import { LightDarkToggle } from "./components/LightDarkToggle";
-// import LightModeIcon from "@mui/icons-material/LightMode";
-// import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function App() {
   return (
@@ -35,7 +33,7 @@ function App() {
                         <img
                           className="kitty"
                           src={kitty}
-                          alt="Kitty's LinkedIn Image"
+                          alt="Kitty's LinkedIn"
                         />
                       </a>
                     </div>

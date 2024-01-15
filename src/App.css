@@ -27,11 +27,9 @@
 @keyframes rotateL {
   from {
     transform: rotate(0deg) scaleX(-1);
-    /* transform: scaleX(-1); */
   }
   to {
     transform: rotate(145deg) scaleX(-1);
-    /* transform: ; */
   }
 }
 
@@ -44,8 +42,6 @@
   }
 }
 
-
-
 @keyframes fadeInOut {
   0%, 100% {
     opacity: 0;
@@ -54,19 +50,6 @@
     opacity: 1;
   }
 }
-
-/* input[type="hidden"]:focus + .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: zoomIn rotateR;
-} */
-/* .stars {
-  position:fixed;
-  top:0;
-  width: 100%;
-  /* z-index: 1; 
-  /* animation: rotateStar 3s linear infinite; 
-} */
 
 .flicker{
   position: absolute;
@@ -182,7 +165,6 @@ html {
   min-width: 100%;
   min-height: 10%;
   align-self: flex-end;
-  /* padding-right: 5%; */
   border-radius: 0 0 0 2.5rem;
 }
 
@@ -192,7 +174,6 @@ html {
   min-width: 95%;
   min-height: 100%;
   margin-right: 5%;
-  /* padding-right: 5%; */
   align-self: flex-end;
   border-radius: 3rem 0 0 0;
 }

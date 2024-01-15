@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/system';
+import "../App.css";
 import './Work.css';
 
 export const Work = () => {

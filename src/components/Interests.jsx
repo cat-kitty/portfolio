@@ -1,5 +1,5 @@
 import React from "react";
-// import "../../App.css";
+import "../App.css";
 import "./Interests.css";
 import { Box } from "@mui/system";
 import Killjoy from "../images/Art/2021.7.20.png";

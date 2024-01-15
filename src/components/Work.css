@@ -128,7 +128,7 @@
     grid-row: 1 / 1;
     inline-size: fit-content;
     padding: var(--uia-card-time-padding, .25rem 1.25rem .25rem);
-    background-color: var(--uia-card-time-background-color, rgba(255, 255, 255, 0.08));
+    /* background-color: var(--uia-card-time-background-color, #ffffff14); */
   
     font-weight: var(--uia-card-time-font-weight, 700);
     font-size: var(--uia-card-time-font-size, .75rem);

@@ -69,7 +69,7 @@ export const Work = () => {
                                         <Paper className="uia-card__container">
                                             <Box className="uia-card__intro">
                                                 <Paper className="uia-card__time" sx={{
-                                                    backgroundColor: theme.palette.mode === 'dark' ? "red" : "blue"
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
                                                 }}>
                                                     <time datetime="2023-10">October 2023</time>
                                                     <span className="uia-card__time-divider" aria-hidden="true"></span>
@@ -99,11 +99,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Software Developer @ Milliman </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2023-08">August 2023</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2023-12">December 2023</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -125,11 +127,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Compliance Analyst @ Bitbuy </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2023-05">May 2023</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2023-07">July 2023</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -151,11 +155,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Data Science Analyst @ Milliman </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2023-01">January 2023</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2023-04">April 2023</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -184,11 +190,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Full Stack Developer and Compliance Analyst @ Bitbuy </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2022-09"> September 2022</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2022-12">December 2022</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -209,11 +217,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Teaching Assistant @ University of Waterloo</h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2022-08"> August 2022</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2023-01"> January 2023</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -238,11 +248,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Compliance Analyst @ Bitbuy </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2022-05">May 2022</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2022-08">August 2022</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -270,11 +282,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Close Captioning @ Ai-Media </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2021-08">August 2021</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2022-09">September 2021</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">
@@ -301,11 +315,13 @@ export const Work = () => {
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Marketing Intern @ Acadium </h3>
 
-                                                <span class="uia-card__time">
+                                                <Paper class="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
+                                                }}>
                                                     <time datetime="2019-02">February 2021</time>
                                                     <span class="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2021-07">July 2021</time>
-                                                </span>
+                                                </Paper>
                                             </Box>
                                             <Box class="uia-card__body">
                                                 <Box class="uia-card__description">

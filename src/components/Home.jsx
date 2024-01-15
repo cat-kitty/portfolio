@@ -1,7 +1,4 @@
 import human from "../images/human1.png";
-import create from "../images/create.svg";
-import circle from "../images/circle.png";
-
 import { Box, useTheme } from "@mui/material";
 
 export function Home() {

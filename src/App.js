@@ -2,8 +2,6 @@ import "./App.css";
 import home from "./images/home.json";
 import kitty from "./images/linkedin.jpg";
 import Lottie from "lottie-react";
-
-import create from "./images/create.svg";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
@@ -33,8 +31,6 @@ function App() {
   const toggleTheme = () => {
     setdarkMode(!darkMode);
   };
-
-  const backbackground = darkMode ? "#ffffff" : "#000000";
 
   return (
     <ThemeProvider theme={darkTheme}>
@@ -91,9 +87,7 @@ function App() {
                   <Box className="lefttoggle">
                     <Box className="lefttoggle2">
                       <Box className="lefttoggle3">
-                        {/* <Box className="lighttoggle"> */}
                         <LightDarkToggle onClick={toggleTheme} />
-                        {/* </Box> */}
                       </Box>
                     </Box>
                   </Box>

@@ -8,8 +8,6 @@ export const Star = () => {
         const getCount = () => {
             const height = document.querySelectorAll(".SussyBaka")[0].clientHeight
             const starHeight = document.querySelectorAll(".stars1")[0].clientHeight
-            // console.log(height)
-            // console.log(starHeight)
             const starContainer = document.querySelectorAll(".flicker")[0]
             starContainer.style.height = height + "px"
             setCount(Math.ceil(height / starHeight / 2))

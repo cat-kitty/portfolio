@@ -13,7 +13,6 @@ export const Footer = () => {
         <small className="website-rights">Kitty Cai © 2024</small>
         <div className="social-icons">
           <Button
-            // className="social-icon-Button facebook"
             href="https://www.facebook.com/kitty.cai.zhirong/"
             target="_blank"
             aria-label="Facebook"
@@ -21,7 +20,6 @@ export const Footer = () => {
             <FacebookIcon />
           </Button>
           <Button
-            // className="social-icon-Button instagram"
             href="https://www.instagram.com/kitty8197/"
             target="_blank"
             aria-label="Instagram"

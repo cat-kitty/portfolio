@@ -61,9 +61,9 @@ function App() {
               <div className="lefttoggle">
                 <div className="lefttoggle2">
                   <div className="lefttoggle3">
-                    <div className="lighttoggle">
-                      <LightDarkToggle />
-                    </div>
+                    {/* <div className="lighttoggle"> */}
+                    <LightDarkToggle />
+                    {/* </div> */}
                   </div>
                 </div>
               </div>

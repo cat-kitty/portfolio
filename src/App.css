@@ -54,6 +54,12 @@
     opacity: 1;
   }
 }
+
+/* input[type="hidden"]:focus + .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomIn rotateR;
+} */
 /* .stars {
   position:fixed;
   top:0;
@@ -63,14 +69,10 @@
 } */
 
 .flicker{
-  /* position:fixed;
-  top:0; */
-  /* width: 100%; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100vh; */
   opacity: 0;
   animation: fadeInOut 5s infinite;
   z-index: 1;
@@ -109,16 +111,14 @@ html {
 
 .leftbar{
   background-color: white;
-  /* color: #387eff6b; */
   display: flex;
   align-self: flex-start;
   min-width: 100%;
-  min-height: 80%;
+  min-height: 90%;
   border-radius: 2.5rem 0 0 0;
 }
 
 .leftbarinner{
-  /* background-color: #F5F5FC; */
   background-color: #47474b25;
   display: flex;
   align-self: flex-start;
@@ -166,9 +166,7 @@ html {
 
 .linkedin {
   width: 95%;
-  /* height: 95%; */
   aspect-ratio: 1/1;
-  /* height: auto; */
   border-radius: 50%;
   overflow: hidden;
 }
@@ -182,9 +180,10 @@ html {
   background-color: white;
   display: flex;
   min-width: 100%;
-  min-height: 20%;
+  min-height: 10%;
   align-self: flex-end;
-  border-radius: 0 0 0 5rem;
+  /* padding-right: 5%; */
+  border-radius: 0 0 0 2.5rem;
 }
 
 .lefttoggle2{
@@ -193,8 +192,9 @@ html {
   min-width: 95%;
   min-height: 100%;
   margin-right: 5%;
+  /* padding-right: 5%; */
   align-self: flex-end;
-  border-radius: 3rem 0 0 5rem;
+  border-radius: 3rem 0 0 0;
 }
 
 .lefttoggle3{
@@ -207,13 +207,13 @@ html {
   align-items: center;
 }
 
-.lighttoggle{
+/* .lighttoggle{
   background-color: #383A40;
   display: flex;
   width: 50%;
   height: 80%;
   border-radius: 5rem 5rem 5rem 5rem;
-}
+} */
 
 .right{
   background-color: white;

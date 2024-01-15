@@ -89,7 +89,7 @@ import Killua2 from "../images/Art/2017.2.17.jpg";
 
 export const Interests = () => {
     return (
-        <Box sx={{ margin: 10, height: "100vh" }} id="interests">
+        <Box sx={{ margin: 10 }} id="interests">
             <div className="header">
                 <h1>Interests</h1>
             </div>

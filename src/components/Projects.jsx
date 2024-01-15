@@ -13,9 +13,9 @@ import project from '../images/project-project.png'
 export const Projects = () => {
     return (
         <Box sx={{ margin: 10 }}>
-            <div className="header">
+            <Box className="header">
                 <h1>Projects</h1>
-            </div>
+            </Box>
             <Box
                 sx={{
                     display: "grid",

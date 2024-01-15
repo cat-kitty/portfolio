@@ -4,11 +4,11 @@ import kitty from '../images/kitty.JPG'
 
 export const About = () => {
     return (
-        <Box className="aboutsection" sx={{ margin: 10, height: "100vh" }} id="about">
+        <Box className="aboutsection" sx={{ margin: 10 }} id="about">
             <div className="header">
                 <h1>About Me</h1>
             </div>
-            <Paper sx={{ position: "relative", height: "65%", zIndex: "1000000", boxShadow: "0 0 2rem gray", display: "flex", alignItems: "center", justifyContent: "space-evenly", padding: "2rem" }}>
+            <Paper sx={{ position: "relative", zIndex: "1000000", boxShadow: "0 0 2rem gray", display: "flex", alignItems: "center", justifyContent: "space-evenly", padding: "2rem" }}>
                 <img className="rectangle" src={kitty} />
                 <Typography sx={{ paddingLeft: "2rem" }}> I'm Kitty, a third-year student pursuing a dual degree in Computer Science and Financial Management. <br />
                     <br />

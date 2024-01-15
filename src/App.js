@@ -2,6 +2,8 @@ import "./App.css";
 import home from "./images/home.json";
 import kitty from "./images/linkedin.jpg";
 import Lottie from "lottie-react";
+
+import create from "./images/create.svg";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import TipsAndUpdatesOutlinedIcon from "@mui/icons-material/TipsAndUpdatesOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
@@ -11,77 +13,112 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Work } from "./components/Work";
+import { Star } from "./components/Star";
 import { Interests } from "./components/Interests";
+import { Footer } from "./components/Footer";
 import { Box, Button } from "@mui/material";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-      <body>
-        <main style={{ margin: "0px" }}>
-          <div className="whole">
-            <div className="left">
-              <div className="leftbar">
-                <div className="leftbarinner">
-                  <div className="leftbarinnerinner">
-                    <div className="oval border">
-                      <Button className="icon2" href="#home">
-                        <Lottie animationData={home} loop={true} />
-                      </Button>
-                      <div className="line"></div>
-                      <a
-                        className="linkedin"
-                        href="https://www.linkedin.com/in/kitty-c-79951b19a/"
-                      >
-                        <img
-                          className="kitty"
-                          src={kitty}
-                          alt="Kitty's LinkedIn"
-                        />
-                      </a>
-                    </div>
-                    <Button className="icon1" href="#about">
-                      <StarBorderOutlinedIcon style={{ fontSize: "50px" }} />
-                    </Button>
-                    <Button className="icon1" href="#projects">
-                      <TipsAndUpdatesOutlinedIcon
-                        style={{ fontSize: "50px" }}
-                      />
-                    </Button>
-                    <Button className="icon1" href="#work">
-                      <WorkHistoryOutlinedIcon style={{ fontSize: "50px" }} />
-                    </Button>
-                    <Button className="icon1" href="#interests">
-                      <PaletteIcon style={{ fontSize: "50px" }} />
-                    </Button>
-                  </div>
-                </div>
-              </div>
-              <div className="lefttoggle">
-                <div className="lefttoggle2">
-                  <div className="lefttoggle3">
-                    {/* <div className="lighttoggle"> */}
-                    <LightDarkToggle />
-                    {/* </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { useState } from "react";
+import { CssBaseline } from "@mui/material/";
 
-            <Box sx={{ flex: "1 1 auto", overflowY: " auto" }}>
-              <div id="home" />
-              <Home />
-              <About />
-              <div id="projects" />
-              <Projects />
-              <Work />
-              <Interests />
-            </Box>
-          </div>
-        </main>
-      </body>
-    </div>
+function App() {
+  const [darkMode, setdarkMode] = useState(false);
+  const darkTheme = createTheme({
+    palette: {
+      mode: darkMode ? "dark" : "light",
+    },
+  });
+
+  const toggleTheme = () => {
+    setdarkMode(!darkMode);
+  };
+
+  const backbackground = darkMode ? "#ffffff" : "#000000";
+
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline>
+        <Box className="App">
+          <header className="App-header"></header>
+          <body>
+            <main style={{ margin: "0px" }}>
+              <Box className="whole">
+                <Box className="left">
+                  <Box className="leftbar">
+                    <Box className="leftbarinner">
+                      <Box className="leftbarinnerinner">
+                        <Box
+                          className="oval"
+                          sx={{ borderStyle: "solid", borderWidth: 2 }}
+                        >
+                          <Button className="icon2" href="#home">
+                            <Lottie animationData={home} loop={true} />
+                          </Button>
+                          <Box className="line"></Box>
+                          <a
+                            className="linkedin"
+                            href="https://www.linkedin.com/in/kitty-c-79951b19a/"
+                          >
+                            <img
+                              className="kitty"
+                              src={kitty}
+                              alt="Kitty's LinkedIn"
+                            />
+                          </a>
+                        </Box>
+                        <Button className="icon1" href="#about">
+                          <StarBorderOutlinedIcon
+                            style={{ fontSize: "50px" }}
+                          />
+                        </Button>
+                        <Button className="icon1" href="#projects">
+                          <TipsAndUpdatesOutlinedIcon
+                            style={{ fontSize: "50px" }}
+                          />
+                        </Button>
+                        <Button className="icon1" href="#work">
+                          <WorkHistoryOutlinedIcon
+                            style={{ fontSize: "50px" }}
+                          />
+                        </Button>
+                        <Button className="icon1" href="#interests">
+                          <PaletteIcon style={{ fontSize: "50px" }} />
+                        </Button>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box className="lefttoggle">
+                    <Box className="lefttoggle2">
+                      <Box className="lefttoggle3">
+                        {/* <Box className="lighttoggle"> */}
+                        <LightDarkToggle onClick={toggleTheme} />
+                        {/* </Box> */}
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
+
+                <Box
+                  className="SussyBaka"
+                  sx={{ flex: "1 1 auto", overflowY: " auto" }}
+                >
+                  <Star />
+                  <Box id="home" />
+                  <Home />
+                  <About />
+                  <Box id="projects" />
+                  <Projects />
+                  <Work />
+                  {/* <Interests /> */}
+                  <Footer />
+                </Box>
+              </Box>
+            </main>
+          </body>
+        </Box>
+      </CssBaseline>
+    </ThemeProvider>
   );
 }
 

@@ -17,8 +17,8 @@ html {
 #categories li {
   position: relative;
   list-style-type: none;
-  width: 27.85714285714286%; /* = (100-2.5) / 3.5 */
-  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  width: 27.85714285714286%;
+  padding-bottom: 32.16760145166612%;
   float: left;
   overflow: hidden;
   visibility: hidden;
@@ -69,8 +69,6 @@ html {
   -webkit-transform: skewY(-30deg) rotate(60deg);
   -ms-transform: skewY(-30deg) rotate(60deg);
   transform: skewY(-30deg) rotate(60deg);
-
-  /* -webkit-backface-visibility: hidden; */
 }
 
 /* HEX CONTENT */

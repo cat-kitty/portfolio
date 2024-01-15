@@ -125,13 +125,13 @@ export const Interests = () => {
                             <p>2021.3.20 Pencil Crayon Art</p>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <div>
                             <img src={Tired} alt="Girl Head Down on Desk" />
                             <h1>Tired</h1>
                             <p>2021.1.29 Pencil Crayon Art</p>
                         </div>
-                    </li>
+                    </li> */}
                     <li></li>
                     <li class="pusher"></li>
                     {/* Y2020 */}
@@ -169,13 +169,13 @@ export const Interests = () => {
                             <p>2020.10.11 Ink Drawing (Black)</p>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <div>
                             <img src={Inktober9} alt="Killua Zoldyck" />
                             <h1>Day 9 - Inktober (Throw) (Killua - Hunter X Hunter)</h1>
                             <p>2020.10.9 Ink Drawing (Black)</p>
                         </div>
-                    </li>
+                    </li> */}
                     <li>
                         <div>
                             <img src={Inktober8} alt="Rin Matsuoka" />

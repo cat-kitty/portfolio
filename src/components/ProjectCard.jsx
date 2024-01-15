@@ -9,8 +9,7 @@ export const ProjectCard = ({ image, skills, title, description, link }) => {
     return (
         <Card sx={{ maxHeight: 600, boxShadow: '10px 10px 10px 10px #387eff6b', zIndex: 10000000, display: "flex", flexDirection: "column" }}>
             <CardActionArea component="a" href={link} target="_blank" sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>
-                {/* <a href="https://pocket-sage.com/"></a> */}
-                <CardMedia sx={{ height: 250, display: "flex", flexDirection: "column" }}>
+                <CardMedia sx={{ height: 250 }}>
                     <img src={image} style={{ height: "100%", width: "100%", objectFit: "contain" }} />
                 </CardMedia>
                 <CardContent sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}>

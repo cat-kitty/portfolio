@@ -10,51 +10,49 @@ export const Footer = () => {
   return (
     <Box>
       <div className="footer-container">
-        <section className="social-media">
-          <small className="website-rights">Kitty Cai © 2024</small>
-          <div className="social-icons">
-            <Button
-              // className="social-icon-Button facebook"
-              href="https://www.facebook.com/kitty.cai.zhirong/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <FacebookIcon />
-            </Button>
-            <Button
-              // className="social-icon-Button instagram"
-              href="https://www.instagram.com/kitty8197/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <InstagramIcon />
-            </Button>
-            <Button
-              className="social-icon-Button youtube"
-              href="https://www.youtube.com/channel/UCTtk542dl8URUg_CffP70bQ"
-              target="_blank"
-              aria-label="YouTube"
-            >
-              <YouTubeIcon />
-            </Button>
-            <Button
-              className="social-icon-Button LinkedIn"
-              href="https://www.linkedin.com/in/kitty-cai/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <LinkedInIcon />
-            </Button>
-            <Button
-              className="social-icon-Button github"
-              href="https://github.com/cat-kitty"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              < GitHubIcon />
-            </Button>
-          </div>
-        </section>
+        <small className="website-rights">Kitty Cai © 2024</small>
+        <div className="social-icons">
+          <Button
+            // className="social-icon-Button facebook"
+            href="https://www.facebook.com/kitty.cai.zhirong/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <FacebookIcon />
+          </Button>
+          <Button
+            // className="social-icon-Button instagram"
+            href="https://www.instagram.com/kitty8197/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <InstagramIcon />
+          </Button>
+          <Button
+            className="social-icon-Button youtube"
+            href="https://www.youtube.com/channel/UCTtk542dl8URUg_CffP70bQ"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <YouTubeIcon />
+          </Button>
+          <Button
+            className="social-icon-Button LinkedIn"
+            href="https://www.linkedin.com/in/kitty-cai/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon />
+          </Button>
+          <Button
+            className="social-icon-Button github"
+            href="https://github.com/cat-kitty"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            < GitHubIcon />
+          </Button>
+        </div>
       </div>
     </Box>
   );

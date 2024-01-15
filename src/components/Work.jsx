@@ -3,21 +3,54 @@ import { Box } from '@mui/system';
 import "../App.css";
 import './Work.css';
 import { Card, Paper, useTheme } from '@mui/material';
+// import { blue, red } from '@mui/material/colors';
 
-export const FunnyPaper = (props) => {
-    const theme = useTheme();
+// export const FunnyPaper = (props) => {
+//     const theme = useTheme();
 
-    const backgroundColor = theme.palette.mode === 'dark' ? '#ffffff14' : '#f0f0f0';
-    return (
-        <Paper
-            sx={{
-                backgroundColor,
-            }}
-            {...props}
-        />
-    );
-}
+//     const backgroundColor = theme.palette.mode === 'dark' ? 'green' : 'blue';
+//     return (
+//         <Paper
+
+//             {...props}
+//             sx={{
+//                 backgroundColor,
+//             }}
+//         />
+//     );
+// }
+
+// export const PurplePaper = (props) => {
+//     const theme = useTheme();
+
+//     const backgroundColor = theme.palette.mode === 'dark' ? '#53358C' : '#e2daf1';
+//     return (
+//         <Paper
+//             sx={{
+//                 backgroundColor,
+//             }}
+//             {...props}
+//         />
+//     );
+// }
+
+// export const PurplePaper = (props) => {
+//     const theme = useTheme();
+
+//     const backgroundColor = theme.palette.mode === 'dark' ? '#53358C' : '#e2daf1';
+//     return (
+//         <Paper
+//             sx={{
+//                 backgroundColor,
+//                 ...props.sx, // include any additional styles passed through props
+//             }}
+//             {...props}
+//         />
+//     );
+// }
+
 export const Work = () => {
+    const theme = useTheme();
     return (
         <Box className="aboutsection" sx={{ margin: 10, position: "relative" }} id="work">
             <Box className="header">
@@ -32,15 +65,16 @@ export const Work = () => {
                             <Box class="uia-timeline__groups">
 
                                 <section class="uia-timeline__group">
-                                    <Paper clasName="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                                    <Paper className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
                                         <Paper className="uia-card__container">
                                             <Box className="uia-card__intro">
-
-                                                <FunnyPaper className="uia-card__time">
+                                                <Paper className="uia-card__time" sx={{
+                                                    backgroundColor: theme.palette.mode === 'dark' ? "red" : "blue"
+                                                }}>
                                                     <time datetime="2023-10">October 2023</time>
                                                     <span className="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2024-01">January 2024</time>
-                                                </FunnyPaper>
+                                                </Paper>
 
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Course Assistant @ University of Waterloo</h3>
 
@@ -145,8 +179,8 @@ export const Work = () => {
                             <Box class="uia-timeline__groups">
 
                                 <section class="uia-timeline__group">
-                                    <Box className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
-                                        <Box className="uia-card__container">
+                                    <Paper className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                                        <Paper className="uia-card__container">
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Full Stack Developer and Compliance Analyst @ Bitbuy </h3>
 
@@ -165,13 +199,13 @@ export const Work = () => {
                                                     </ul>
                                                 </Box>
                                             </Box>
-                                        </Box>
-                                    </Box>
+                                        </Paper>
+                                    </Paper>
                                 </section>
 
                                 <section class="uia-timeline__group">
-                                    <Box className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
-                                        <Box className="uia-card__container">
+                                    <Paper className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                                        <Paper className="uia-card__container">
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Teaching Assistant @ University of Waterloo</h3>
 
@@ -192,15 +226,15 @@ export const Work = () => {
                                                     </ul>
                                                 </Box>
                                             </Box>
-                                        </Box>
-                                    </Box>
+                                        </Paper>
+                                    </Paper>
                                 </section>
 
 
 
                                 <section class="uia-timeline__group">
-                                    <Box className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
-                                        <Box className="uia-card__container" style={{ backgroundColor: '#e2daf1' }}>
+                                    <Paper className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                                        <Paper className="uia-card__container" style={{ backgroundColor: '#e2daf1' }}>
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Compliance Analyst @ Bitbuy </h3>
 
@@ -221,8 +255,8 @@ export const Work = () => {
                                                     </ul>
                                                 </Box>
                                             </Box>
-                                        </Box>
-                                    </Box>
+                                        </Paper>
+                                    </Paper>
                                 </section>
                             </Box>
                         </Box>
@@ -231,8 +265,8 @@ export const Work = () => {
                             <span class="uia-timeline__year" aria-hidden="true">2021</span>
                             <Box class="uia-timeline__groups">
                                 <section class="uia-timeline__group">
-                                    <Box className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
-                                        <Box className="uia-card__container">
+                                    <Paper className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                                        <Paper className="uia-card__container">
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Close Captioning @ Ai-Media </h3>
 
@@ -251,8 +285,8 @@ export const Work = () => {
                                                     </ul>
                                                 </Box>
                                             </Box>
-                                        </Box>
-                                    </Box>
+                                        </Paper>
+                                    </Paper>
                                 </section>
 
                             </Box>
@@ -262,8 +296,8 @@ export const Work = () => {
                             <span class="uia-timeline__year" aria-hidden="true">2019</span>
                             <Box class="uia-timeline__groups">
                                 <section class="uia-timeline__group">
-                                    <Box className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
-                                        <Box className="uia-card__container">
+                                    <Paper className="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                                        <Paper className="uia-card__container">
                                             <Box class="uia-card__intro">
                                                 <h3 id="timeline-demo-1-heading-2" class="ra-heading"> Marketing Intern @ Acadium </h3>
 
@@ -284,8 +318,8 @@ export const Work = () => {
                                                     </ul>
                                                 </Box>
                                             </Box>
-                                        </Box>
-                                    </Box>
+                                        </Paper>
+                                    </Paper>
                                 </section>
 
                             </Box>

@@ -110,7 +110,7 @@ function App() {
                   <Box id="projects" />
                   <Projects />
                   <Work />
-                  {/* <Interests /> */}
+                  <Interests />
                   <Footer />
                 </Box>
               </Box>

@@ -11,7 +11,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Work } from "./components/Work";
-import { Star } from "./components/Star";
+// import { Star } from "./components/Star";
 import { Interests } from "./components/Interests";
 import { Footer } from "./components/Footer";
 import { Box, Button } from "@mui/material";
@@ -40,6 +40,7 @@ function App() {
           <body>
             <main style={{ margin: "0px" }}>
               <Box className="whole">
+                {/* <div className="flicker"></div> */}
                 <Box className="left">
                   <Box className="leftbar">
                     <Box className="leftbarinner">
@@ -95,9 +96,13 @@ function App() {
 
                 <Box
                   className="SussyBaka"
-                  sx={{ flex: "1 1 auto", overflowY: " auto" }}
+                  sx={{
+                    flex: "1 1 auto",
+                    overflowY: " auto",
+                  }}
                 >
-                  <Star />
+                  {/* <Star /> */}
+
                   <Box id="home" />
                   <Home />
                   <About />

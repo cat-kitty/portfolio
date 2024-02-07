@@ -51,7 +51,7 @@
   }
 }
 
-.flicker{
+/* .flicker{
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -60,24 +60,122 @@
   opacity: 0;
   animation: fadeInOut 5s infinite;
   z-index: 0;
-  /* repeat */
-}
+  /* repeat 
+} */
 
-.stars1{
+/* .stars1{
   animation-delay: 0s;
   width: 100%;
-  /* background-size: cover; */
+  /* background-size: cover; 
   background-repeat: repeat;
-  /* background-size: cover; */
-}
-
+  /* background-size: cover; 
+} */
+/* 
 .stars2{
   animation-delay: 2.5s;
   width: 100%;
+  /* background-size: cover; 
+  background-repeat: repeat; */
   /* background-size: cover; */
-  background-repeat: repeat;
-  /* background-size: cover; */
+/* } */
+
+/* Define the star image styles
+.stars1, .stars2 {
+  width: 20px; /* Adjust the width as needed 
+  height: 20px; 
+  display: block;
+} */
+
+/* Style for the container */
+/* .flicker {
+  position: relative;
+} */
+
+/* .SussyBaka {
+  background-image: url("./images/stars1.png");
+  background-size: 100vw;
+  animation: flickerAnimation 3s infinite alternate;
+
+} */
+
+.SussyBaka {
+  position: relative;
+  /* Other styles for your .SussyBaka class */
+
 }
+
+.SussyBaka::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/stars1.png");
+  background-size: 100vw;
+  opacity: 0;
+  animation: flickerAnimation 2.5s infinite alternate;
+}
+
+/* Animation for the flickering effect */
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Animation for the flickering effect */
+/* @keyframes flickerAnimation {
+  0% {
+    background-image: o;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+} */
+/* Style for the pseudo-elements and insert the star images */
+.flicker:before,
+.flicker:after {
+  content: url("./images/stars1.png") repeat; /* Path to the stars1 image */
+  position: absolute;
+  /* overflow: hidden; */
+  background-repeat: repeat;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  /* height: auto; */
+  opacity: 100;
+  animation: fadeInOut 5s infinite;
+  z-index: 0;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; */
+}
+
+.flicker:after {
+  content: url("./images/stars2.png"); /* Path to the stars2 image */
+  z-index: 0;
+  background-repeat: repeat;
+}
+
+/* Adjust the background size and animation as needed */
+.flicker:before,
+.flicker:after {
+  background-size: cover;
+  background-repeat: repeat;
+  animation: flickerAnimation 3s infinite alternate;
+}
+
+
 
 html {
   scroll-behavior: smooth;

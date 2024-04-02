@@ -1,0 +1,4 @@
+npm start
+    - To run
+
+npm run build

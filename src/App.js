@@ -33,6 +33,7 @@ function App() {
   };
 
   return (
+    // <div loader-wrapper>
     <ThemeProvider theme={darkTheme}>
       <CssBaseline>
         <Box className="App">

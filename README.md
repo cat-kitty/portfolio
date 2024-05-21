@@ -1,1 +1,1 @@
-# Hey, I'm Kitty! Welcome to my portfolio website!
+# Hey, I'm Kitty! Welcome to my Portfolio Website!

@@ -5,11 +5,18 @@ import { Box } from "@mui/system";
 import Killjoy from "../images/Art/2021.7.20.png";
 import Lion from "../images/Art/2021.6.19.png";
 import AnimeGirl from "../images/Art/2021.3.20.png";
+// import Tired from "../images/Art/2021.1.29.png";
 import AnimeGirlCoffee from "../images/Art/2020.12.27.png";
 import BalloonGirl from "../images/Art/2020.12.6.png";
 import Hisoka from "../images/Art/2020.11.27.png";
 import AnimeMan from "../images/Art/2020.10.11.png";
+// import Inktober9 from "../images/Art/2020.10.9.png";
+// import Inktober8 from "../images/Art/2020.10.8.png";
 import Inktober7 from "../images/Art/2020.10.7.jpg";
+import Inktober6 from "../images/Art/2020.10.6.png";
+import Inktober5 from "../images/Art/2020.10.5.png";
+import Inktober4 from "../images/Art/2020.10.4.jpg";
+import Inktober3 from "../images/Art/2020.10.3.jpg";
 import Inktober2 from "../images/Art/2020.10.2.png";
 import Inktober1 from "../images/Art/2020.10.1.jpg";
 import FatherDaughter from "../images/Art/2020.9.30.png";
@@ -19,31 +26,66 @@ import Touch from "../images/Art/2020.9.4.png";
 import AnimeBoy from "../images/Art/2020.8.28.png";
 import Snorlax from "../images/Art/2020.8.26.png";
 import AnimeBoy2 from "../images/Art/2020.8.20.png";
+import Killua from "../images/Art/2020.8.16.png";
+import AnimeBoy3 from "../images/Art/2020.8.14.png";
 import AnimeBoy4 from "../images/Art/2020.8.11.png";
 import HeadphoneGirl from "../images/Art/2020.7.25.png";
 import CryingGirl from "../images/Art/2020.7.23.png";
+import Judaru from "../images/Art/2020.7.13.jpg";
+import FD4 from "../images/Art/2020.6.194.png";
+import FD3 from "../images/Art/2020.6.193.png";
+import FD2 from "../images/Art/2020.6.192.png";
+import FD1 from "../images/Art/2020.6.191.png";
 import Victini from "../images/Art/2020.6.18.jpg";
 import Berukuri from "../images/Art/2020.6.11.jpg";
+import Aurorus from "../images/Art/2020.6.5.jpg";
 import Sandshrew from "../images/Art/2020.4.4s.jpg";
 import Wooper from "../images/Art/2020.4.4.jpg";
+import Inuyasha from "../images/Art/2020.3.15.png";
 import SooWon from "../images/Art/2020.2.13.png";
 import AnimeGirl2 from "../images/Art/2020.2.7.png";
 import SooWon2 from "../images/Art/2020.1.17.png";
 import Portrait from "../images/Art/2020.1.2.png";
+import Bounsweet from "../images/Art/2019.10.10zb.jpg";
+import Solosis from "../images/Art/2019.10.10s.jpg";
+import Cottonee from "../images/Art/2019.10.10.jpg";
+import Snorlax2 from "../images/Art/2019.10.5s.jpg";
+import Zeraora from "../images/Art/2019.10.5.jpg";
+import Vivillon from "../images/Art/2019.9.29b.jpg";
+import Vulpix from "../images/Art/2019.9.29.jpg";
+import Gengar from "../images/Art/2019.9.20.jpg";
+import Cyndaquil from "../images/Art/2019.8.27.jpg";
+import Furret from "../images/Art/2019.8.26.jpg";
+import Ampharos from "../images/Art/2019.8.25.jpg";
+import Lanturn from "../images/Art/2019.8.24l.jpg";
 import Skitty from "../images/Art/2019.8.24.jpg";
 import Togepi from "../images/Art/2019.8.22.jpg";
+import Azurill from "../images/Art/2019.8.21.jpg";
+import Cinccino from "../images/Art/2019.8.20r.jpg";
 import MC from "../images/Art/2019.8.20d.jpg";
+import Minccino from "../images/Art/2019.8.20.jpg";
+import Emolga from "../images/Art/2019.8.19.jpg";
+import Eevee from "../images/Art/2019.8.18.jpg";
+import Piplup from "../images/Art/2019.8.16.jpg";
+import Pikachu from "../images/Art/2019.8.15p.jpg";
+import Misdreavus from "../images/Art/2019.8.15.jpg";
+import Shaymin from "../images/Art/2019.8.14.jpg";
 import Kazama from "../images/Art/2019.7.20.jpg";
 import AnimeBoy5 from "../images/Art/2019.6.23.jpg";
 import AnimeBoy6 from "../images/Art/2019.5.18.jpg";
 import Kija from "../images/Art/2019.4.9.jpg";
 import AnimeBoy7 from "../images/Art/2019.3.27.jpg";
+import AnimeBoy8 from "../images/Art/2019.3.25.jpg";
 import AnimeBoy9 from "../images/Art/2019.3.24.jpg";
 import AnimeGirls from "../images/Art/2019.3.23.jpg";
 import Asuna from "../images/Art/2019.3.11.jpg";
 import Hijikata from "../images/Art/2019.1.31.jpg";
+import ShinAh from "../images/Art/2019.1.28.jpg";
+import AnimeBoy10 from "../images/Art/2019.1.25.jpg";
 import Tiger from "../images/Art/2018.10.5.png";
 import Red from "../images/Art/2017.3.30.jpg";
+import Rose from "../images/Art/2017.3.24.png";
+import Killua2 from "../images/Art/2017.2.17.jpg";
 
 export const Interests = () => {
     return (
@@ -148,21 +190,21 @@ export const Interests = () => {
                             <p>2020.10.7 Ink Drawing (Black)</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Inktober6} alt="Pikachu" />
                             <h1>Day 6 - Inktober (Rodent) (Pikachu - Pokémon)</h1>
                             <p>2020.10.6 Ink Drawing (Black)</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={Inktober5} alt="Knives" />
                             <h1>Day 5 - Inktober (Blade)</h1>
                             <p>2020.10.5 Ink Drawing (Black)</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={Inktober4} alt="Man Singing" />
                             <h1>Day 4 - Inktober (Radio)</h1>
@@ -175,7 +217,7 @@ export const Interests = () => {
                             <h1>Day 3 - Inktober (Bulky) (Levi - Attack on Titan)</h1>
                             <p>2020.10.3 Ink Drawing (Black)</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img src={Inktober2} alt="Wisp" />
@@ -245,20 +287,20 @@ export const Interests = () => {
                             <p>2020.8.20 Ink Drawing (Blue)</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Killua} alt="Killua Zoldyck Sketch" />
                             <h1>Killua (Hunter X Hunter)</h1>
                             <p>2020.8.16 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={AnimeBoy3} alt="Anime Boy" />
                             <h1>Anime Boy</h1>
                             <p>2020.8.14 Pencil Sketch</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img
@@ -283,7 +325,7 @@ export const Interests = () => {
                             <p>2020.7.23 Ink Drawing (Black)</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img
                                 src={Judaru}
@@ -292,8 +334,8 @@ export const Interests = () => {
                             <h1>Judar (Hepburn: Magi)</h1>
                             <p>2020.7.13 Pencil Sketch</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img
                                 src={FD4}
@@ -332,7 +374,7 @@ export const Interests = () => {
                             <h1>Happy Father's Day - 1</h1>
                             <p>2020.6.19 Ink Drawing (Black)</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img src={Victini} alt="Victini Pokémon" />
@@ -350,13 +392,13 @@ export const Interests = () => {
                             <p>2020.6.11 Pencil Sketch</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Aurorus} alt="Aurorus Pokémon" />
                             <h1>Aurorus (Pokémon)</h1>
                             <p>2020.6.5 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img src={Sandshrew} alt="Sandshrew Pokémon" />
@@ -371,13 +413,13 @@ export const Interests = () => {
                             <p>2020.4.4 Pencil Crayon Art</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Inuyasha} alt="Inuyasha" />
                             <h1>Inuyasha (InuYasha)</h1>
                             <p>2020.3.15 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img
@@ -414,6 +456,90 @@ export const Interests = () => {
                     {/* Y2019 */}
                     <li>
                         <div>
+                            <img src={Bounsweet} alt="Bounsweet Pokémon" />
+                            <h1>Bounsweet (Pokémon)</h1>
+                            <p>2019.10.10 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Solosis} alt="Solosis Pokémon" />
+                            <h1>Solosis (Pokémon)</h1>
+                            <p>2019.10.10 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Cottonee} alt="Cottonee Pokémon" />
+                            <h1>Cottonee (Pokémon)</h1>
+                            <p>2019.10.10 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Snorlax2} alt="Snorlax Pokémon" />
+                            <h1>Snorlax (Pokémon)</h1>
+                            <p>2019.10.5 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Zeraora} alt="Zeraora Pokémon" />
+                            <h1>Zeraora (Pokémon)</h1>
+                            <p>2019.10.5 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Vivillon} alt="Vivillon Pokémon" />
+                            <h1>Vivillon (Pokémon)</h1>
+                            <p>2019.9.29 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Vulpix} alt="Vulpix Pokémon" />
+                            <h1>Vulpix (Pokémon)</h1>
+                            <p>2019.9.29 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Gengar} alt="Gengar Pokémon" />
+                            <h1>Gengar (Pokémon)</h1>
+                            <p>2019.9.20 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Cyndaquil} alt="Cyndaquil Pokémon" />
+                            <h1>Cyndaquil (Pokémon)</h1>
+                            <p>2019.8.27 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Furret} alt="Furret Pokémon" />
+                            <h1>Furret (Pokémon)</h1>
+                            <p>2019.8.26 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Ampharos} alt="Ampharos Pokémon" />
+                            <h1>Ampharos (Pokémon)</h1>
+                            <p>2019.8.25 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src={Lanturn} alt="Lanturn Pokémon" />
+                            <h1>Lanturn (Pokémon)</h1>
+                            <p>2019.8.24 Pencil Crayon Art</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
                             <img src={Skitty} alt="Skitty Pokémon" />
                             <h1>Skitty (Pokémon)</h1>
                             <p>2019.8.24 Pencil Crayon Art</p>
@@ -426,20 +552,20 @@ export const Interests = () => {
                             <p>2019.8.22 Pencil Crayon Art</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Azurill} alt="Azurill Pokémon" />
                             <h1>Azurill (Pokémon)</h1>
                             <p>2019.8.21 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={Cinccino} alt="Cinccino Pokémon" />
                             <h1>Cinccino (Pokémon)</h1>
                             <p>2019.8.20 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img
@@ -450,7 +576,7 @@ export const Interests = () => {
                             <p>2019.8.20 Pencil Crayon Art</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Minccino} alt="Minccino Pokémon" />
                             <h1>Minccino (Pokémon)</h1>
@@ -463,8 +589,8 @@ export const Interests = () => {
                             <h1>Emolga (Pokémon)</h1>
                             <p>2019.8.19 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={Eevee} alt="Eevee Pokémon" />
                             <h1>Eevee (Pokémon)</h1>
@@ -484,21 +610,21 @@ export const Interests = () => {
                             <h1>Pikachu (Pokémon)</h1>
                             <p>2019.8.15 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={Misdreavus} alt="Misdreavus Pokémon" />
                             <h1>Misdreavus (Pokémon)</h1>
                             <p>2019.8.15 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img src={Shaymin} alt="Shaymin Pokémon" />
                             <h1>Shaymin (Pokémon)</h1>
                             <p>2019.8.14 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img
@@ -546,13 +672,13 @@ export const Interests = () => {
                             <p>2019.3.27 Ink Drawing (Black)</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={AnimeBoy8} alt="Casual Anime Boy " />
                             <h1>Anime Boy</h1>
                             <p>2019.3.25 Ink Drawing (Black)</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li>
                         <div>
                             <img src={AnimeBoy9} alt="Anime Boy Smoking" />
@@ -584,7 +710,7 @@ export const Interests = () => {
                             <p>2019.1.31 Pencil Sketch</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img
                                 src={ShinAh}
@@ -593,8 +719,8 @@ export const Interests = () => {
                             <h1>Shin-Ah (Akatsuki No Yona)</h1>
                             <p>2019.1.28 Pencil Sketch</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img
                                 src={AnimeBoy10}
@@ -603,7 +729,7 @@ export const Interests = () => {
                             <h1>~ Happy Birthday Conner ~</h1>
                             <p>2019.1.25 Pencil Sketch</p>
                         </div>
-                    </li> */}
+                    </li>
                     <li></li>
                     <li class="pusher"></li>
                     {/* Y2018 */}
@@ -626,14 +752,14 @@ export const Interests = () => {
                             <p>2017.3.30 Pencil Crayon Art</p>
                         </div>
                     </li>
-                    {/* <li>
+                    <li>
                         <div>
                             <img src={Rose} alt="Red Rose" />
                             <h1>Red Rose</h1>
                             <p>2017.3.24 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                         <div>
                             <img
                                 src={Killua2}
@@ -642,7 +768,7 @@ export const Interests = () => {
                             <h1>Killua (Hunter X Hunter)</h1>
                             <p>2017.2.17 Pencil Crayon Art</p>
                         </div>
-                    </li> */}
+                    </li>
                 </ul>
             </div>
         </Box>

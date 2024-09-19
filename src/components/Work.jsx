@@ -26,7 +26,7 @@ export const Work = () => {
                                                 <Paper className="uia-card__time" sx={{
                                                     backgroundColor: theme.palette.mode === 'dark' ? "#ffffff14" : "#f0f0f0"
                                                 }}>
-                                                    <time datetime="2023-10">October 2023</time>
+                                                    <time datetime="2023-10">September 2023</time>
                                                     <span className="uia-card__time-divider" aria-hidden="true"></span>
                                                     <time datetime="2024-01">January 2024</time>
                                                 </Paper>

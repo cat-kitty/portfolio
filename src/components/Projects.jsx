@@ -21,7 +21,7 @@ export const Projects = () => {
                     display: "grid",
                     gap: "3rem",
                     width: "100%",
-                    gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(30%, 1fr))",
                 }}
             >
                 <ProjectCard image={vpsa} title="VPSA" skills={["React", "TypeScript", "Express", "GraphQL", "Apollo", "Docker"]}

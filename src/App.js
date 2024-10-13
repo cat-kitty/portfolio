@@ -20,6 +20,10 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useState } from "react";
 import { CssBaseline } from "@mui/material/";
 
+// New page for reviews/interests
+// import { Reviews } from "./components/Reviews";
+import { Review } from "./components/Review";
+
 function App() {
   const [darkMode, setdarkMode] = useState(false);
   const darkTheme = createTheme({
@@ -111,6 +115,7 @@ function App() {
                   <Projects />
                   <Work />
                   <Interests />
+                  <Review />
                   <Footer />
                 </Box>
               </Box>

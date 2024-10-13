@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <Box>
       <div className="footer-container">
-        <small className="website-rights">Kitty Cai © 2024</small>
+        <small className="website-rights">Kitty Cai © {new Date().getFullYear()}</small>
         <div className="social-icons">
           <Link
             href="https://www.facebook.com/kitty.cai.zhirong/"

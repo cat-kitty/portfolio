@@ -5,7 +5,7 @@ export function Home() {
     const theme = useTheme();
 
     return (
-        <Box className="right" sx={{ backgroundColor: "transparent" }}>
+        <Box className="right" sx={{ backgroundColor: "transparent" }} id="home">
             <div className="header">
                 <h1>Kitty Cai</h1>
             </div>

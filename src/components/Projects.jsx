@@ -12,7 +12,7 @@ import project from '../images/project-project.png'
 
 export const Projects = () => {
     return (
-        <Box sx={{ margin: 10 }}>
+        <Box sx={{ margin: 10 }} id="projects">
             <Box className="header">
                 <h1>Projects</h1>
             </Box>

@@ -11,18 +11,14 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Work } from "./components/Work";
-// import { Star } from "./components/Star";
 import { Interests } from "./components/Interests";
 import { Footer } from "./components/Footer";
+import { Review } from "./components/Review";
 import { Box, Button } from "@mui/material";
-
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useState } from "react";
 import { CssBaseline } from "@mui/material/";
-
-// New page for reviews/interests
-// import { Reviews } from "./components/Reviews";
-import { Review } from "./components/Review";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   const [darkMode, setdarkMode] = useState(false);
@@ -37,15 +33,13 @@ function App() {
   };
 
   return (
-    // <div loader-wrapper>
     <ThemeProvider theme={darkTheme}>
       <CssBaseline>
-        <Box className="App">
-          <header className="App-header"></header>
-          <body>
+        <Router>
+          <Box className="App">
+            <header className="App-header"></header>
             <main style={{ margin: "0px" }}>
               <Box className="whole">
-                {/* <div className="flicker"></div> */}
                 <Box className="left">
                   <Box className="leftbar">
                     <Box className="leftbarinner">
@@ -69,24 +63,27 @@ function App() {
                             />
                           </a>
                         </Box>
-                        <Button className="icon1" href="#about">
+                        <Button className="icon1" href="/#about">
                           <StarBorderOutlinedIcon
                             style={{ fontSize: "50px" }}
                           />
                         </Button>
-                        <Button className="icon1" href="#projects">
+                        <Button className="icon1" href="/#projects">
                           <TipsAndUpdatesOutlinedIcon
                             style={{ fontSize: "50px" }}
                           />
                         </Button>
-                        <Button className="icon1" href="#work">
+                        <Button className="icon1" href="/#work">
                           <WorkHistoryOutlinedIcon
                             style={{ fontSize: "50px" }}
                           />
                         </Button>
-                        <Button className="icon1" href="#interests">
+                        <Button className="icon1" href="/#interests">
                           <PaletteIcon style={{ fontSize: "50px" }} />
                         </Button>
+                        <Link to="/review">
+                          <Button variant="contained">Go to Reviews</Button>
+                        </Link>
                       </Box>
                     </Box>
                   </Box>
@@ -106,22 +103,15 @@ function App() {
                     overflowY: " auto",
                   }}
                 >
-                  {/* <Star /> */}
-
-                  <Box id="home" />
-                  <Home />
-                  <About />
-                  <Box id="projects" />
-                  <Projects />
-                  <Work />
-                  <Interests />
-                  <Review />
-                  <Footer />
+                  <Routes>
+                    <Route path="/" element={<><Home /><About /><Projects /><Work /><Interests /><Footer /></>} />
+                    <Route path="/review" element={<Review />} />
+                  </Routes>
                 </Box>
               </Box>
             </main>
-          </body>
-        </Box>
+          </Box>
+        </Router>
       </CssBaseline>
     </ThemeProvider>
   );

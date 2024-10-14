@@ -201,6 +201,7 @@ html {
   display: flex;
   align-self: flex-start;
   min-width: 100%;
+  max-width: 60px;
   min-height: 90%;
   border-radius: 2.5rem 0 0 0;
 }
